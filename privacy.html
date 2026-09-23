@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — QuickStop</title>
+<style>
+  :root { color-scheme: light dark; --ink:#14141f; --muted:#5b5b70; --bg:#ffffff; --rule:#e6e6ef; --accent:#5b3be8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f5f5fa; --muted:#a0a0b8; --bg:#0b0b12; --rule:#26263a; --accent:#9d7bff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:3rem 1rem 5rem; }
+  h1 { font-size:1.9rem; letter-spacing:-.02em; margin:0 0 .3rem; }
+  h2 { font-size:1.15rem; margin:2.5rem 0 .6rem; letter-spacing:-.01em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  table { width:100%; border-collapse:collapse; margin:1rem 0; font-size:.94rem; }
+  th,td { text-align:left; padding:.6rem .5rem; border-bottom:1px solid var(--rule); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--accent); }
+  code { background:rgba(128,128,150,.14); padding:.1rem .35rem; border-radius:4px; font-size:.9em; }
+  footer { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">QuickStop · Last updated 24 September 2026</p>
+
+  <p>This policy explains what the app collects, why, and who else sees it. It is
+  written to be read, not to be skimmed past.</p>
+
+  <h2>What we collect</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Source</th></tr>
+    <tr><td>Email address</td><td>Identifies your account. Never shown to other players.</td><td>Google Sign-In</td></tr>
+    <tr><td>Display name, username, profile picture</td><td>Shown to other players in games you join.</td><td>You / Google Sign-In</td></tr>
+    <tr><td>Age and gender</td><td>Optional. You can leave both blank and play normally.</td><td>You</td></tr>
+    <tr><td>Answers you type during a round</td><td>Scored, then shown to the other players in that game.</td><td>You</td></tr>
+    <tr><td>Game history and scores</td><td>Leaderboards and your lifetime stats.</td><td>Gameplay</td></tr>
+  </table>
+
+  <p>We do <strong>not</strong> collect your contacts, location, photos, device
+  identifiers for advertising, or browsing activity. There is no advertising SDK
+  and no analytics SDK in the app.</p>
+
+  <h2>Who else sees your data</h2>
+  <table>
+    <tr><th>Service</th><th>What it receives</th><th>Why</th></tr>
+    <tr>
+      <td><a href="https://supabase.com/privacy">Supabase</a></td>
+      <td>Everything above</td>
+      <td>Hosts the database and handles sign-in</td>
+    </tr>
+    <tr>
+      <td><a href="https://policies.google.com/privacy">Google</a> (Sign-In)</td>
+      <td>Your sign-in request</td>
+      <td>Authenticates you</td>
+    </tr>
+    <tr>
+      <td><a href="https://ai.google.dev/gemini-api/terms">Google Gemini</a></td>
+      <td><strong>The words you type as answers</strong>, with the category and letter</td>
+      <td>Decides whether an answer is valid</td>
+    </tr>
+  </table>
+
+  <p><strong>Being specific about the answer checking:</strong> when a round
+  ends, the distinct answers from that round are sent to Google's Gemini API to
+  be judged valid or invalid. Your name, username, email and player ID are
+  <em>not</em> sent — only the words themselves, the category, and the letter.
+  Answers already judged before are served from our own cache and are not sent
+  again.</p>
+
+  <p>We do not sell your data, and we do not share it with advertisers.</p>
+
+  <h2>Who can see you in the app</h2>
+  <p>Other players in a game you join can see your display name, username,
+  profile picture, your answers once the round is scored, and your score. Your
+  email address and age are never shown to other players.</p>
+
+  <p>While a round is still running, nobody can see your answers — not even the
+  host. They become visible only after the round is scored.</p>
+
+  <h2>Keeping and deleting your data</h2>
+  <p>Your profile and game history are kept while your account exists. Delete your
+  account from <strong>Profile → Delete account</strong>, or email us, and
+  everything tied to you is removed: profile, answers, scores and game history.
+  Deletion is permanent and takes effect within 30 days.</p>
+
+  <p>Validated words are kept without any link to the player who typed them. Once
+  the app knows that "Islamabad" is a valid Place starting with I, that fact is
+  stored on its own and carries no connection to you.</p>
+
+  <h2>Children</h2>
+  <p>This app is not directed at children under 13, and we do not knowingly
+  collect data from them. If you believe a child has created an account, contact
+  us and we will remove it.</p>
+
+  <h2>Security</h2>
+  <p>Traffic is encrypted in transit. Database access is restricted by row-level
+  security, so one player cannot read another player's unsubmitted answers or
+  private profile fields. No system is perfectly secure, and we do not claim
+  otherwise.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes materially we will update the date above and notify
+  you in the app before the change takes effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, or a data deletion request:
+  <a href="mailto:teams.sxfstudios@gmail.com">teams.sxfstudios@gmail.com</a></p>
+
+  <footer>QuickStop · SB Studioz</footer>
+</main>
+</body>
+</html>

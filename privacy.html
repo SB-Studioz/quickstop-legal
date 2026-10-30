@@ -40,8 +40,10 @@
     <tr><td>Age and gender</td><td>Optional. You can leave both blank and play normally.</td><td>You</td></tr>
     <tr><td>Answers you type during a round</td><td>Scored, then shown to the other players in that game.</td><td>You</td></tr>
     <tr><td>Game history and scores</td><td>Leaderboards and your lifetime stats.</td><td>Gameplay</td></tr>
+    <tr><td>Crash reports</td><td>When the app crashes or hits an error: what went wrong in the code, the device model, Android and app version, and the same random account ID. Never your answers or messages. Used to find and fix bugs.</td><td>The app, via Firebase Crashlytics</td></tr>
     <tr><td>App usage events</td><td>Which screens you open and actions such as signing in, starting or finishing a game, with coarse details (number of rounds, your finishing place). Tied to a random account ID, never to your name, username or email, and never including your answers or messages. Used to understand how the app is used and improve it.</td><td>The app, via Google Analytics for Firebase</td></tr>
     <tr><td>Advertising ID and basic device information</td><td>Only when ads are shown: lets Google AdMob show and measure ads. You can reset or delete this ID in your phone's settings.</td><td>Your device, via Google AdMob</td></tr>
+    <tr><td>Purchases</td><td>Only if you buy Remove ads or QuickStop AI Plus: which product, the Google Play order ID and purchase token, and when a subscription renews or ends, stored against your account so your purchase follows you to a new phone. Your payment details stay with Google Play and never reach us.</td><td>Google Play</td></tr>
   </table>
 
   <p>We do <strong>not</strong> collect your contacts, location, photos or
@@ -77,20 +79,25 @@
       <td>Shows and measures ads</td>
     </tr>
     <tr>
+      <td><a href="https://firebase.google.com/support/privacy">Firebase Crashlytics</a></td>
+      <td>Crash and error reports, a random account ID, device and app version</td>
+      <td>Finds and fixes bugs</td>
+    </tr>
+    <tr>
       <td><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></td>
       <td>App usage events, a random account ID, device and app version, approximate location from IP</td>
       <td>Tells us how the app is used</td>
     </tr>
     <tr>
-      <td><a href="https://ai.google.dev/gemini-api/terms">Google Gemini</a></td>
+      <td>Google (AI answer checking)</td>
       <td><strong>The words you type as answers</strong>, with the category and letter</td>
       <td>Decides whether an answer is valid</td>
     </tr>
   </table>
 
   <p><strong>Being specific about the answer checking:</strong> when a round
-  ends, the distinct answers from that round are sent to Google's Gemini API to
-  be judged valid or invalid. Your name, username, email and player ID are
+  ends, the distinct answers from that round are sent to an AI service run by
+  Google to be judged valid or invalid. Your name, username, email and player ID are
   <em>not</em> sent — only the words themselves, the category, and the letter.
   Answers already judged before are served from our own cache and are not sent
   again.</p>

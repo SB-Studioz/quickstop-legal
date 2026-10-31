@@ -27,7 +27,7 @@
 <body>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="sub">QuickStop AI · Last updated 21 October 2026</p>
+  <p class="sub">QuickStop AI · Last updated 31 October 2026</p>
 
   <p>This policy explains what the app collects, why, and who else sees it. It is
   written to be read, not to be skimmed past.</p>
@@ -35,15 +35,16 @@
   <h2>What we collect</h2>
   <table>
     <tr><th>Data</th><th>Why</th><th>Source</th></tr>
-    <tr><td>Email address</td><td>Identifies your account. Never shown to other players.</td><td>Google Sign-In</td></tr>
-    <tr><td>Display name, username, profile picture</td><td>Shown to other players in games you join.</td><td>You / Google Sign-In</td></tr>
+    <tr><td>Email address</td><td>Identifies your account. Never shown to other players. With Sign in with Apple you can choose to share a private relay address instead of your own.</td><td>Google Sign-In or Sign in with Apple</td></tr>
+    <tr><td>Display name, username, profile picture</td><td>Shown to other players in games you join.</td><td>You / Google Sign-In / Sign in with Apple</td></tr>
     <tr><td>Age and gender</td><td>Optional. You can leave both blank and play normally.</td><td>You</td></tr>
     <tr><td>Answers you type during a round</td><td>Scored, then shown to the other players in that game.</td><td>You</td></tr>
     <tr><td>Game history and scores</td><td>Leaderboards and your lifetime stats.</td><td>Gameplay</td></tr>
-    <tr><td>Crash reports</td><td>When the app crashes or hits an error: what went wrong in the code, the device model, Android and app version, and the same random account ID. Never your answers or messages. Used to find and fix bugs.</td><td>The app, via Firebase Crashlytics</td></tr>
+    <tr><td>Crash reports</td><td>When the app crashes or hits an error: what went wrong in the code, the device model, operating system (Android or iOS) and app version, and the same random account ID. Never your answers or messages. Used to find and fix bugs.</td><td>The app, via Firebase Crashlytics</td></tr>
     <tr><td>App usage events</td><td>Which screens you open and actions such as signing in, starting or finishing a game, with coarse details (number of rounds, your finishing place). Tied to a random account ID, never to your name, username or email, and never including your answers or messages. Used to understand how the app is used and improve it.</td><td>The app, via Google Analytics for Firebase</td></tr>
     <tr><td>Advertising ID and basic device information</td><td>Only when ads are shown: lets Google AdMob show and measure ads. You can reset or delete this ID in your phone's settings.</td><td>Your device, via Google AdMob</td></tr>
-    <tr><td>Purchases</td><td>Only if you buy Remove ads or QuickStop AI Plus: which product, the Google Play order ID and purchase token, and when a subscription renews or ends, stored against your account so your purchase follows you to a new phone. Your payment details stay with Google Play and never reach us.</td><td>Google Play</td></tr>
+    <tr><td>Purchases</td><td>Only if you buy Remove ads or QuickStop AI Plus: which product, the store's order or transaction ID and purchase token, and when a subscription renews or ends, stored against your account so your purchase follows you to a new phone. Your payment details stay with Google Play or Apple and never reach us.</td><td>Google Play or the App Store</td></tr>
+    <tr><td>Notification token</td><td>Only if you allow notifications: a token for your device so we can tell you about friend requests, messages and games about to start. Deleted when you sign out or delete your account.</td><td>Your device, via Expo's push service</td></tr>
   </table>
 
   <p>We do <strong>not</strong> collect your contacts, location, photos or
@@ -56,8 +57,8 @@
   Ads never appear during a round. Google AdMob may use your device's
   advertising ID, IP address and how you interact with ads to show and
   measure them. Ad content is limited to a general audience rating. You can
-  opt out of personalised ads in your phone's settings (Google → Ads), and
-  players in the EEA and UK are asked for consent first.
+  opt out of personalised ads in your phone's settings (on Android, Google → Ads). On iPhone the app never asks to track you, so Apple's advertising identifier is not shared. Players
+  in the EEA and UK are asked for consent first.
   <a href="https://policies.google.com/technologies/ads">How Google uses data for ads</a>.</p>
 
   <h2>Who else sees your data</h2>
@@ -72,6 +73,16 @@
       <td><a href="https://policies.google.com/privacy">Google</a> (Sign-In)</td>
       <td>Your sign-in request</td>
       <td>Authenticates you</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.apple.com/legal/privacy/">Apple</a></td>
+      <td>Your sign-in request if you use Sign in with Apple; your purchase if you buy on an iPhone</td>
+      <td>Authenticates you and handles App Store payments</td>
+    </tr>
+    <tr>
+      <td><a href="https://expo.dev/privacy">Expo</a></td>
+      <td>Your notification token and the text of each notification</td>
+      <td>Delivers notifications to Android and iPhone</td>
     </tr>
     <tr>
       <td><a href="https://policies.google.com/technologies/ads">Google AdMob</a></td>
